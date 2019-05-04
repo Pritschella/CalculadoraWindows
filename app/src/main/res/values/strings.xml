@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">CalculadoraWindows</string>
+
+    <string name="btn_lineas">=I</string>
+    <string name="txt_estandar">ESTÁNDAR</string>
+    <string name="txt_lbl_numero">0</string>
+
+    <string name="btn_mc">MC</string>
+    <string name="btn_mr">MR</string>
+    <string name="btn_m_mas">M+</string>
+    <string name="btn_m_menos">M-</string>
+    <string name="btn_ms">MS</string>
+    <string name="btn_m_asterisco">M*</string>
+
+    <string name="btn_porcentaje">%</string>
+    <string name="btn_raiz">_/</string>
+    <string name="btn_x_cuadrada">x^2</string>
+    <string name="btn_1_entre_x">1/x</string>
+
+    <string name="btn_ce">CE</string>
+    <string name="btn_c">C</string>
+    <string name="btn_borrar">IXI</string>
+    <string name="btn_division">/</string>
+
+    <string name="btn_7">7</string>
+    <string name="btn_8">8</string>
+    <string name="btn_9">9</string>
+    <string name="btn_multiplicacion">X</string>
+
+    <string name="btn_4">4</string>
+    <string name="btn_5">5</string>
+    <string name="btn_6">6</string>
+    <string name="btn_menos">-</string>
+
+    <string name="btn_1">1</string>
+    <string name="btn_2">2</string>
+    <string name="btn_3">3</string>
+    <string name="btn_mas">+</string>
+
+    <string name="btn_mas_menos">+-</string>
+    <string name="btn_0">0</string>
+    <string name="btn_punto">.</string>
+    <string name="btn_igual">=</string>
+
+
+
+
+
+
+
+
+
+</resources>
