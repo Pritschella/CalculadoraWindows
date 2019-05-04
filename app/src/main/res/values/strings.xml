@@ -5,13 +5,6 @@
     <string name="txt_estandar">ESTÁNDAR</string>
     <string name="txt_lbl_numero">0</string>
 
-    <string name="btn_mc">MC</string>
-    <string name="btn_mr">MR</string>
-    <string name="btn_m_mas">M+</string>
-    <string name="btn_m_menos">M-</string>
-    <string name="btn_ms">MS</string>
-    <string name="btn_m_asterisco">M*</string>
-
     <string name="btn_porcentaje">%</string>
     <string name="btn_raiz">_/</string>
     <string name="btn_x_cuadrada">x^2</string>
