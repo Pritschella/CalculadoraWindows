@@ -35,12 +35,11 @@
     <string name="btn_punto">.</string>
     <string name="btn_igual">=</string>
 
-
-
-
-
-
-
-
+    <string name="btn_MC">MC</string>
+    <string name="btn_MR">MR</string>
+    <string name="btn_Mmas">M+</string>
+    <string name="btn_Mmenos">M-</string>
+    <string name="btn_MS">MS</string>
+    <string name="btn_M">M*</string>
 
 </resources>

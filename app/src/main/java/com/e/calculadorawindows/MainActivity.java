@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     public EditText entrada, lectura;
     public Button btnMenos, btnPorcentaje, btnRaiz, btnPotencia, btnDivisionx, btnCE, btnC, btnBorrar, btnDivision,
@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // lectura=findViewById(R.id.lectura);
-        //entrada=findViewById(R.id.entrada);
+        lectura=findViewById(R.id.editText_resultado2);
+        entrada=findViewById(R.id.editText_resultado);
 
         btn1 = findViewById(R.id.btn_1);
         btn1.setOnClickListener((View.OnClickListener) this);
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         btnMultiplicacion=findViewById(R.id.btn_multiplicacion);
         btnMultiplicacion.setOnClickListener((View.OnClickListener)this);
         btnMenos.setOnClickListener((View.OnClickListener)this);
-       //btnMas=findViewById(R.id.btnM+);
+        //btnMas=findViewById(R.id.btnM+);
         btnPunto=findViewById(R.id.btn_punto);
         btnPunto.setOnClickListener((View.OnClickListener)this);
         btnIgual=findViewById(R.id.btn_igual);
