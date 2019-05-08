@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn0, btnMultiplicacion, btnResta, btnSuma, btnPunto, btnIgual;
 
     byte botonPulsado=0;
-    double memoria;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +50,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnResta=findViewById(R.id.btn_menos);
         btnResta.setOnClickListener((View.OnClickListener)this);
 
-        //btnM=findViewById(R.id.btn_m*);
-        //btnM.setOnClickListener((View.OnClickListener)this);
-
         btnPorcentaje=findViewById(R.id.btn_porcentaje);
         btnPorcentaje.setOnClickListener((View.OnClickListener)this);
         btnRaiz=findViewById(R.id.btn_raiz);
@@ -73,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnDivision.setOnClickListener((View.OnClickListener)this);
         btnMultiplicacion=findViewById(R.id.btn_multiplicacion);
         btnMultiplicacion.setOnClickListener((View.OnClickListener)this);
+        btnMenos=findViewById(R.id.btn_menos);
         btnMenos.setOnClickListener((View.OnClickListener)this);
         //btnMas=findViewById(R.id.btnM+);
         btnPunto=findViewById(R.id.btn_punto);
@@ -86,39 +83,47 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int click = v.getId();
 
         if (click== R.id.btn_1){
-            entrada.setText(entrada.getText()+"1");
+            String cadena=String.valueOf(entrada.getText().toString())+"1";
+            entrada.setText(cadena);
         }
 
         if (click== R.id.btn_2){
-            entrada.setText(entrada.getText()+"1");
+            String cadena=entrada.getText().toString()+"2";
+            entrada.setText(cadena);
         }
 
         if (click== R.id.btn_3){
-            entrada.setText(entrada.getText()+"1");
+            String cadena=entrada.getText().toString()+"3";
+            entrada.setText(cadena);
         }
 
         if (click== R.id.btn_4){
-            entrada.setText(entrada.getText()+"1");
+            String cadena=entrada.getText().toString()+"4";
+            entrada.setText(cadena);
         }
         if (click== R.id.btn_5){
-            entrada.setText(entrada.getText()+"1");
+            String cadena=entrada.getText().toString()+"5";
+            entrada.setText(cadena);
         }
         if (click== R.id.btn_6){
-            entrada.setText(entrada.getText()+"1");
+            String cadena=entrada.getText().toString()+"6";
+            entrada.setText(cadena);
         }
         if (click== R.id.btn_7){
-            entrada.setText(entrada.getText()+"1");
+            String cadena=entrada.getText().toString()+"7";
+            entrada.setText(cadena);
         }
         if (click== R.id.btn_8){
-            entrada.setText(entrada.getText()+"1");
-        }        if (click== R.id.btn_1){
-            entrada.setText(entrada.getText()+"1");
+            String cadena=entrada.getText().toString()+"8";
+            entrada.setText(cadena);
         }
         if (click== R.id.btn_9){
-            entrada.setText(entrada.getText()+"1");
+            String cadena=entrada.getText().toString()+"9";
+            entrada.setText(cadena);
         }
         if (click== R.id.btn_cero){
-            entrada.setText(entrada.getText()+"1");
+            String cadena=entrada.getText().toString()+"0";
+            entrada.setText(cadena);
         }
 
         if (click== R.id.btn_punto){
@@ -129,7 +134,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
 
             if (cont==0){
-                entrada.setText(entrada.getText()+".");
+                String cadena=entrada.getText().toString()+".";
+                entrada.setText(cadena);
             }
         }
 
@@ -303,6 +309,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
 
+        double m=0;
+        if (click == R.id.btn_MS){
+            m=Double.parseDouble(entrada.getText().toString());
+            entrada.setText("");
+        }
+        if (click == R.id.btn_MR){
+            entrada.setText(String.valueOf(m));
+        }
+        if (click==R.id.btn_Mmas){
+            m+=Double.parseDouble(entrada.getText().toString());
+        }
+        if (click==R.id.btn_Mmenos){
+            m-=Double.parseDouble(entrada.getText().toString());
+        }
+        if (click==R.id.btn_MC){
+            m=0;
+        }
 
 
     }

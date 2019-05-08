@@ -253,8 +253,8 @@
         android:layout_height="38dp"
         android:onClick="onClick"
         android:text="@string/btn_3"
-        app:layout_constraintEnd_toStartOf="@+id/btn_mas"
-        tools:layout_editor_absoluteY="373dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_punto"
+        app:layout_constraintEnd_toStartOf="@+id/btn_mas" />
 
     <Button
         android:id="@+id/btn_mas"
@@ -273,8 +273,7 @@
         android:onClick="onClick"
         android:text="@string/btn_mas_menos"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_cero"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btn_cero" />
 
     <Button
         android:id="@+id/btn_cero"
@@ -309,18 +308,27 @@
         android:id="@+id/editText_resultado"
         android:layout_width="294dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="63dp"
+        android:clickable="true"
+        android:editable="false"
         android:ems="10"
+        android:enabled="true"
+        android:gravity="center|right"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="105dp" />
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/btn_x_cuadrada"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/editText_resultado2"
         android:layout_width="294dp"
         android:layout_height="45dp"
         android:ems="10"
+        android:enabled="false"
+        android:gravity="center|right"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="60dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText_resultado"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
